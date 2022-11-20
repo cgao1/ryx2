@@ -21,6 +21,6 @@ Summary of the correlation results
 \dontrun{
 library(MASS)
 x <- ryx(Boston, y="medv")
-summary(x, digits = 3)
+summary.ryx(x, digits = 3)
 }
 }

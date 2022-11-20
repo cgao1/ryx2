@@ -14,6 +14,7 @@
 #' @export
 #'
 #' @import ggplot2
+#' @import stats
 #'
 #' @examples
 #' \dontrun{
@@ -63,7 +64,7 @@ ryx <- function(data, y, x){
 #' \dontrun{
 #' library(MASS)
 #' x <- ryx(Boston, y="medv")
-#' print(x, digits = 3)
+#' print.ryx(x, digits = 3)
 #' }
 print.ryx<- function(x, digits=3){
   if(!inherits(x,"ryx")){
@@ -91,7 +92,7 @@ print.ryx<- function(x, digits=3){
 #' \dontrun{
 #' library(MASS)
 #' x <- ryx(Boston, y="medv")
-#' summary(x, digits = 3)
+#' summary.ryx(x, digits = 3)
 #' }
 summary.ryx<-function(x, digits=3){
   if(!inherits(x,"ryx")){
@@ -128,7 +129,7 @@ summary.ryx<-function(x, digits=3){
 #' \dontrun{
 #' library(MASS)
 #' x <- ryx(Boston, y="medv")
-#' plot(x)
+#' plot.ryx(x)
 #' }
 plot.ryx<- function(x){
   if(!inherits(x,"ryx")){

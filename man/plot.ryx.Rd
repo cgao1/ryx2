@@ -19,6 +19,6 @@ Create a Cleveland Dot Chart of the correlation
 \dontrun{
 library(MASS)
 x <- ryx(Boston, y="medv")
-plot(x)
+plot.ryx(x)
 }
 }

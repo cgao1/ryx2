@@ -21,6 +21,6 @@ Prints the correlation table
 \dontrun{
 library(MASS)
 x <- ryx(Boston, y="medv")
-print(x, digits = 3)
+print.ryx(x, digits = 3)
 }
 }

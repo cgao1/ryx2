@@ -1,12 +1,12 @@
 # rxy
 
-<img src="image.jpg" width="200"/>
-
 <!-- badges: start -->
 
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 
 <!-- badges: end -->
+
+![](tools.jpg)
 
 The goal of rxy is to provide an easy way to obtain results for correlation.
 
@@ -23,13 +23,13 @@ remotes::install_github("cgao1/rxy")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how to solve use the package after installation:
 
 ``` r
 library(rxy)
 library(MASS)
 x<-ryx(Boston,"medv")
-print(x)
-summary(x)
-plot(X)
+print.ryx(x)
+summary.ryx(x)
+plot.ryx(X)
 ```
