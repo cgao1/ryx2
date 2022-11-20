@@ -117,9 +117,9 @@ summary.ryx<-function(x, digits=3){
 #' Create a Cleveland Dot Chart of the correlation
 #'
 #' @param x The list result from the ryx function
-#'
-#' @return A Cleveland Dot Chart of the correlation
 #' @import ggplot2
+#' @return A Cleveland Dot Chart of the correlation
+#'
 #' @export
 #'
 #'
@@ -138,7 +138,7 @@ plot.ryx<- function(x){
   library(ggplot2)
   ggplot2::ggplot(x$df,
          aes(x=abs(x$df$r),
-             y=reorder(x$df$variable, abs(x$df$r)))) +
+             y=stats::reorder(x$df$variable, abs(x$df$r)))) +
     geom_point(aes(color=Direction),
                size = 2) +
     scale_colour_manual(values = c(negative="red",positive="blue"))+
