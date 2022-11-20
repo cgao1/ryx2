@@ -22,3 +22,16 @@ library(rxy)
 
 This is a project for a class in Wesleyan University. It contains some interesting functions for a correlation table.
 
+# Example
+
+Below is an example code of how to use this package
+
+```{r}
+# library(rxy)
+# library(MASS)
+# x<-ryx(Boston,"medv")
+# print(x)
+# summary(x)
+# plot(X)
+```
+
