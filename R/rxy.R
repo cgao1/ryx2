@@ -126,7 +126,7 @@ plot.ryx<- function(x){
     stop("Must be class 'ryx'")
   }
   Direction<-ifelse(x$df$r<0,"negative","positive")
-  ggplot(x$df,
+  ggplot2::ggplot(x$df,
          aes(x=abs(x$df$r),
              y=reorder(x$df$variable, abs(x$df$r)))) +
     geom_point(aes(color=Direction),
