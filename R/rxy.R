@@ -13,6 +13,8 @@
 #' @return A list of 1. y 2. x 3. correlation table of y correlated with each of x
 #' @export
 #'
+#' @import ggplot2
+#'
 #' @examples
 #' \dontrun{
 #' # Correlation of "medv" in the Boston dataset with every other variable in the dataset
@@ -55,6 +57,8 @@ ryx <- function(data, y, x){
 #' @return A correlation table
 #' @export
 #'
+#' @import ggplot2
+#'
 #' @examples
 #' \dontrun{
 #' library(MASS)
@@ -80,6 +84,8 @@ print.ryx<- function(x, digits=3){
 #'
 #' @return A paragraph summarizing the results of the correlation
 #' @export
+#'
+#' @import ggplot2
 #'
 #' @examples
 #' \dontrun{
@@ -113,9 +119,10 @@ summary.ryx<-function(x, digits=3){
 #' @param x The list result from the ryx function
 #'
 #' @return A Cleveland Dot Chart of the correlation
+#' @import ggplot2
 #' @export
 #'
-#' @import ggplot2
+#'
 #'
 #' @examples
 #' \dontrun{
