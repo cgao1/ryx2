@@ -1,6 +1,6 @@
 Package: rxy
 Title: Correlation Table, Print, Summary, and Plot
-Version: 0.0.0.9000
+Version: 1.0.0.0000
 Authors@R: 
     person(given="Calvin", family="Gao", email="cgao@wesleyan.edu", role = c("aut","cre"))
 Description: This package takes (dataset, y, x) in the ryx function to return a list of the y variable, the x variable, and a correlation table where y is correlated with every variable in x. The package contains the functions  ryx(data, y,x)  print(x)  summary(x)  plot(x)  The input for print, summary and plot should be the results from the ryx function.
