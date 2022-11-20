@@ -18,7 +18,7 @@ You can install the development version of rxy like so:
 if(!require("remotes")){
 install.packages("remotes")
 }
-remotes::install_github("cgao1/rxy"")
+remotes::install_github("cgao1/rxy")
 ```
 
 ## Example
