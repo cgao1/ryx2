@@ -115,6 +115,8 @@ summary.ryx<-function(x, digits=3){
 #' @return A Cleveland Dot Chart of the correlation
 #' @export
 #'
+#' @import ggplot2
+#'
 #' @examples
 #' \dontrun{
 #' library(MASS)
