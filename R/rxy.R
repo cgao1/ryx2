@@ -135,7 +135,6 @@ plot.ryx<- function(x){
     stop("Must be class 'ryx'")
   }
   Direction<-ifelse(x$df$r<0,"negative","positive")
-  library(ggplot2)
   ggplot2::ggplot(x$df,
          aes(x=abs(x$df$r),
              y=stats::reorder(x$df$variable, abs(x$df$r)))) +
