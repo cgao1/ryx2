@@ -1,5 +1,5 @@
 ---
-title: "Intro to correlation with rxy"
+title: "rxy"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{rxy}
